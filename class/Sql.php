@@ -36,7 +36,7 @@ class Sql extends PDO {
 
          
 
-
+    // QUERY QUE EXECUTA 
     
     public function query($rawQuery, $params = array()){
 
@@ -53,7 +53,7 @@ class Sql extends PDO {
 
   
 
-
+   //SELECT PEGANDO A QUERY EXECUTAVEL E DANDO UM FETCHALL
 
    
     public function select($rawQuery, $params = array()):array{
