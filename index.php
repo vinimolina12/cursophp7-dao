@@ -12,12 +12,17 @@ $lista = Usuario::getList();
 
 //$search = Usuario::search("akashi");
 //echo json_encode($search); 
-
+/*
 $busca = new Usuario();
 $busca->buscar("bielakashi", "123321");
-echo $busca;
+echo json_encode($busca);
+*/
+$aluno = new Usuario();
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("0102030405");
+$aluno->insert();
 
-
+echo $aluno;
 
 
 
